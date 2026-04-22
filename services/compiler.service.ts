@@ -1,9 +1,9 @@
 import axios, { AxiosError } from "axios";
 
 const api = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:9000/files",
+    baseURL: process.env.NEXT_PUBLIC_API_URL || "/api/files",  // ← đổi chỗ này
     headers: { "Content-Type": "application/json" },
-    timeout: 10_000, // fetch không có cái này
+    timeout: 10_000,
 });
 
 // Global error interceptor — 1 chỗ xử lý tất cả lỗi
