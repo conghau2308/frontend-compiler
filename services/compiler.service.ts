@@ -1,7 +1,7 @@
 import axios, { AxiosError } from "axios";
 
 const api = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_API_URL || "/api/files",  // ← đổi chỗ này
+    baseURL: process.env.NEXT_PUBLIC_API_URL || "https://abc-xyz-example.ngrok-free.app/files",
     headers: { "Content-Type": "application/json" },
     timeout: 10_000,
 });
