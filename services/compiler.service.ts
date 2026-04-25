@@ -1,8 +1,11 @@
 import axios, { AxiosError } from "axios";
 
 const api = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_API_URL || "https://abc-xyz-example.ngrok-free.app/files",
-    headers: { "Content-Type": "application/json" },
+    baseURL: process.env.NEXT_PUBLIC_API_URL || "https://measured-dassie-fast.ngrok-free.app/files",
+    headers: {
+        "Content-Type": "application/json",
+        "ngrok-skip-browser-warning": "true",  // ← thêm dòng này
+    },
     timeout: 10_000,
 });
 
