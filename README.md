@@ -58,12 +58,12 @@ Create a .env.local file in the root directory and specify the backend API URL. 
     Open http://localhost:3000 with your browser to see the IDE.
 
 ## 📂 Project Structure
-├── app/                  # Next.js App Router (Main UI layout, pages)
-├── components/           # Reusable UI components (shadcn/ui, Monaco Editor wrapper, etc.)
-├── services/             # API integration (Axios interceptors, endpoints: build, run, read)
-├── lib/                  # Utility functions (Tailwind class merging for shadcn)
-├── public/               # Static assets
-└── types/                # TypeScript interfaces and types
+    ├── app/                  # Next.js App Router (Main UI layout, pages)
+    ├── components/           # Reusable UI components (shadcn/ui, Monaco Editor wrapper, etc.)
+    ├── services/             # API integration (Axios interceptors, endpoints: build, run, read)
+    ├── lib/                  # Utility functions (Tailwind class merging for shadcn)
+    ├── public/               # Static assets
+    └── types/                # TypeScript interfaces and types
 ## 🌐 Deployment
 The frontend is fully optimized for Vercel. Push your code to the main branch to trigger an automatic deployment.
 
